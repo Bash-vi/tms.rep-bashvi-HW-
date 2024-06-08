@@ -57,13 +57,25 @@ sum = "\(r) / \(t) = \(r / t)"
 
 //5. С помощью if-else необходимо вывести в консоль, ночь ли сегодня (isNight).
 
-var time = 2                                                                           //не уверен что правильно сделал
+var time = 12
+time = 13
+time = 23
 
-if time <= 6 {
+if time <= 6 || time >= 23 {
     print("isnight")
 } else {
     print("notisnight")
 }
+
+
+var isnight = false
+isnight = true
+if isnight {
+    print("сейчас ночь")
+} else {
+    print("сейчас не ночь")
+}
+
 
 //6. Дана строка, сделать копию этой строки. Вывести копию строки в консоль. Помним,
     //что строка – это коллекция символов, по которым можно "пробегаться". Решение let
@@ -83,11 +95,12 @@ for word in list {
 
 let list1 = [13,2,20,21,76]
 for numbers in list1 {
-    print(numbers % 2)
-}
-   
-                                                                                    //думал как-то через цикл для всех проверку сделать// уверен что можно)
-
+    if numbers % 2 > 0 {
+        print("нечетное")
+    } else {
+        print("чётное")
+            }
+        }
 
 var chislo1 = 13 % 2
 var chislo2 = 2 % 2
@@ -139,7 +152,10 @@ if  day1 <= 10 {
 
 
 
-let day = 11
+var day = 11
+day = 24
+day = 17
+
 var dekada: String
 switch day {
 case 1...10:
@@ -166,17 +182,20 @@ print("\(dekada) - Декада")
     //соблюдалось. Поэкспериментируйте с разными строками.
 
 var string = "cbesssew"
-var bukva = "s"
-for letter in string {
-    print(letter)
-    if letter == bukva {break}
+string = "sfkegey"
+if string.first == "s" {
+    print("yes")
+} else {
+    print("no")
 }
 
-                                        //что-то тут не могу родить как составить условия в зависимости от положения буквы(
+                                        //что-то родил
 
 
 
 //10*. Вывести таблицу умножения в консоль с помощью циклов for in.
+
+
 let list4 = 0...9                                                           //диапазон удобно
 let list5 = [1,2,3,4,5,6,7,8,9]
 for number3 in list5 {
@@ -190,3 +209,35 @@ for number3 in list4 {
         print(number3, "*", number2, "=", (number3) * (number2))
     }
 }
+
+
+
+// написал код для проекта
+
+
+let pn:Int = 1
+let wt = 2
+let sr = 3
+let cht = 4
+let pt = 5
+let weeknd = 6
+
+var dni = "Среда"
+dni = "Четверг"
+
+var numweek: Int
+switch dni {
+case "Понедельник":
+    numweek = weeknd - pn
+case "Вторник":
+    numweek = weeknd - wt
+case "Среда":
+    numweek = weeknd - sr
+case "Четверг":
+    numweek = weeknd - cht
+case "Пятница":
+    numweek = weeknd - pt
+default:
+    numweek = weeknd - weeknd
+}
+ print("\(dni) - дней до выходного - \(numweek) ")
