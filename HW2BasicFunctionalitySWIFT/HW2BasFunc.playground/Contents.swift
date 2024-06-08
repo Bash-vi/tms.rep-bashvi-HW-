@@ -3,8 +3,8 @@ import UIKit
 //2. Написать переменные и константы всех базовых типов данных: Int, Bool, Float,
     //Double, String. У чисел вывести их минимальные и максимальные значения (Int8/16…
     //UInt…), а у строки – количество символов.
-let m: Int = 8                                                            // не понятно про макс и мин значения и кол символов
-let n: Int = 3                                                                      // где int8/16 Uint не понимаю пока
+let m: Int = 8
+let n: Int = 3
 let p: Int = 5
 let o: Double = 7.342345
 let i: Double = 3.79
@@ -12,7 +12,7 @@ let u: Double = 5.98866
 let y: Float = 4.494
 let t: Float = 2.557
 let r: Float = 6.346
-
+let stringprim: String = "Grom i molniya"
 print(o)
 
 var isboxopen: Bool = true
@@ -21,8 +21,13 @@ isboxopen = false
 var fructs = "orange"
 fructs = "lemon"
 
-print(Int.max)
-print(Int.min)
+print("max - Int = \(Int.max) Int8 = \(Int8.max) int16 = \(Int16.max) Int32 = \(Int32.max) int64 =\(Int64.max)")
+print("min - Int = \(Int.min) Int8 = \(Int8.min) int16 = \(Int16.min) Int32 = \(Int32.min) int64 =\(Int64.min)")
+print("max - UInt = \(UInt.max) Int8 = \(UInt8.max) int16 = \(UInt16.max) Int32 = \(UInt32.max) int64 =\(UInt64.max)") //UInt беззнаковое число(положительное)
+print("min - Int = \(UInt.min) Int8 = \(UInt8.min) int16 = \(UInt16.min) Int32 = \(UInt32.min) int64 =\(UInt64.min)")
+
+print("Кол-во символов - \(stringprim.count)")         //с помощью свойства .count получаем количество сиволов в строке/на массивы тоже работает
+
 
 //3. Написать различные выражения с приведением типа. Минимум 8 выражений.
 
