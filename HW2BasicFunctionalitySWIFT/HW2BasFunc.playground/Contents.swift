@@ -77,19 +77,27 @@ if isnight {
 }
 
 
+
 //6. Дана строка, сделать копию этой строки. Вывести копию строки в консоль. Помним,
     //что строка – это коллекция символов, по которым можно "пробегаться". Решение let
     //str2 = str1; print(str2) не принимается.
 
 let str1 = "FUNNY"
+
 for funny in str1 {
     print(funny)
 }
 
-let list = ["F","U","N","N","Y"]
+let list:[Character] = ["F","U","N","N","Y"]
+
 for word in list {
     print(word)
 }
+
+let ChararacterString = String(list)
+
+print(ChararacterString)
+print(str1)                                         //разобрался)
 
 //7*. Сделать проверку: является ли число четным: 13, 2, 20, 21, 76.
 
@@ -181,15 +189,27 @@ print("\(dekada) - Декада")
     //. Затем поменяйте строку, чтобы условие
     //соблюдалось. Поэкспериментируйте с разными строками.
 
+
 var string = "cbesssew"
 string = "sfkegey"
+string = "sgsdlsje"
+
 if string.first == "s" {
     print("yes")
 } else {
     print("no")
 }
 
-                                        //что-то родил
+var char1 = string[string.startIndex]  // индекс понял) разобраться бы с юникодом)
+for char in string {
+    if char == char1 { //{break} ------- хочу остановить тут(
+        print("да")
+    }  else {
+        print("неа")
+    }
+}
+                                                    
+                                   //что-то родил
 
 
 
@@ -240,4 +260,4 @@ case "Пятница":
 default:
     numweek = weeknd - weeknd
 }
- print("\(dni) - дней до выходного - \(numweek) ")
+print("\(dni) - дней до выходного - \(numweek) ")
