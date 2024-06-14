@@ -9,17 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var leibel: UILabel!
+   
+    
+    
     @IBOutlet weak var text: UITextField!
     @IBOutlet weak var button: UIButton!
-  
-    let pn:Int = 1
-    let wt = 2
-    let sr = 3
-    let cht = 4
-    let pt = 5
-    let weeknd = 6
-
+    @IBOutlet weak var labeldays: UILabel!
+    
+    var numweek: String = ""
     //я понимаю что мне нужно переменную dni прязать к UITextField! а переменную numweek привязать к UILabel! не понимаю как это сделать
     //почему привязывая кнопку сверху пишет @IBOutlet weak var а снизу другое 
     
@@ -30,24 +27,27 @@ class ViewController: UIViewController {
 
     @IBAction func actionbutton(_ sender: Any) {
         
-        var dni = Field.text
-
-        var numweek: Int
-        switch dni {
-        case "Понедельник":
-            numweek = weeknd - pn
-        case "Вторник":
-            numweek = weeknd - wt
-        case "Среда":
-            numweek = weeknd - sr
-        case "Четверг":
-            numweek = weeknd - cht
-        case "Пятница":
-            numweek = weeknd - pt
-        default:
-            numweek = weeknd - weeknd
-        }
         
+        func dayweek(day:Int) -> String {
+            return "\(6 - day)"
+        }
+       
+        
+        switch text.text {
+        case "Понедельник":
+            numweek = "Осталось \(dayweek(day: 1)) дней до выходного"
+        case "Вторник":
+            numweek = "Осталось \(dayweek(day: 2)) дней до выходного"
+        case "Среда":
+            numweek = "Осталось \(dayweek(day: 3)) дней до выходного"
+        case "Четверг":
+            numweek = "Осталось \(dayweek(day: 4)) дней до выходного"
+        case "Пятница":
+            numweek = "Осталось \(dayweek(day: 5)) дней до выходного"
+        default:
+            numweek = "Осталось \(dayweek(day: 6)) дней"
+        }
+        labeldays.text = numweek
     }
     
 }
