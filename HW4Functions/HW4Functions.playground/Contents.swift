@@ -258,7 +258,7 @@ func factorial(numb: Int) -> Int {
         }
   return answer
 }
-factorial(numb: 5)
+factorial(numb: 10)
 
 
 
