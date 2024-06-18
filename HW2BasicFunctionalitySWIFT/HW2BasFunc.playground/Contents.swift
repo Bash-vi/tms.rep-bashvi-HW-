@@ -82,7 +82,7 @@ if isnight {
     //что строка – это коллекция символов, по которым можно "пробегаться". Решение let
     //str2 = str1; print(str2) не принимается.
 
-let str1 = "FUNNY"
+var str1 = "FUNNY"
 
 for funny in str1 {
     print(funny)
@@ -97,7 +97,16 @@ for word in list {
 let ChararacterString = String(list)
 
 print(ChararacterString)
-print(str1)                                         //разобрался)
+print(str1)        //разобрался)
+
+
+var str3 = "sombody"
+var str2 = ""
+for funny in str3 {
+    str2.append(funny)
+}
+print(str2)
+
 
 //7*. Сделать проверку: является ли число четным: 13, 2, 20, 21, 76.
 
@@ -192,26 +201,21 @@ print("\(dekada) - Декада")
 
 var string = "cbesssew"
 string = "sfkegey"
-string = "sgsdlsje"
-
+//string = "gsdlsje"
 if string.first == "s" {
     print("yes")
 } else {
     print("no")
 }
-
 var char1 = string[string.startIndex]  // индекс понял) разобраться бы с юникодом)
-for char in string {
-    if char == char1 { //{break} ------- хочу остановить тут(
+    if char1 == "s" {
         print("да")
     }  else {
         print("неа")
     }
-}
+
                                                     
-                                   //что-то родил
-
-
+                                   //во, так
 
 //10*. Вывести таблицу умножения в консоль с помощью циклов for in.
 
