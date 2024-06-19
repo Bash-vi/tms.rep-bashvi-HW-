@@ -26,6 +26,13 @@ func kvadrat(someint:[Int]) -> [Int] {
 }
 kvadrat(someint: [2, 3, 4, 5])
 
+
+
+func kvadrat1(someint:[Int]) -> [Int] {
+    return someint.map { $0 * $0 }
+}
+print(kvadrat1(someint: [2, 3, 4, 5]))
+
 //3.Создать функцию, которая принимает массив int. Возвратить новый массив с только
 //четными элементами.
 zadanie(3)
@@ -41,6 +48,13 @@ func chetnoe(somenum: [Int]) -> [Int] {
     return chetnoe
 }
 chetnoe(somenum: [11,23,22,44,55,4])
+
+
+
+func chetnoe1(somenum: [Int]) -> [Int] {
+    return somenum.filter({$0 % 2 == 0})
+}
+print(chetnoe1(somenum: [3, 4, 9, 2, 40, 1, 5, 8, 6]))
 
 //4.Написать 3 примера с использованием .map
 zadanie(4)
