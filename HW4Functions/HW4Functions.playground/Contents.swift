@@ -258,7 +258,7 @@ func factorial(numb: Int) -> Int {
         }
   return answer
 }
-factorial(numb: 5)
+factorial(numb: 10)
 
 
 
@@ -376,8 +376,19 @@ print(fibloop(6))
 //}
 //
 
-    
+var numb = 1234
+var listnumb: [Int] = []
+//for number in numb {
+//    let sequens = number * 1
+//       listnumb.append(number)
+//}
 
-    
 
        
+var str1 = [Int](["2","1","3"])
+var int1 = 0
+for char in str1{
+    int1 += char
+}
+print(int1)
+
