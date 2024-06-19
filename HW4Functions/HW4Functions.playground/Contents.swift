@@ -359,36 +359,22 @@ print(fibloop(6))
 
 //11*. Создать функцию, которая считает сумму цифр четырехзначного числа,
 //переданного в параметры функции
+print(zadanie(11))
 
 
-//func sumnumb(_ number: Int) -> Int {
-//    let string = String(number)
-//    let numberOfLetter = 0
-//    let index = string.index(string.startIndex, offsetBy:
-//                                numberOfLetter)
-//    print(string[index])
-//    let l1 = Array (string) [0]
-//    let l2 = Array (string) [1]
-//    let l3 = Array (string) [2]
-//    let l4 = Array (string) [3]
-//    var sum = Int(l1) + Int(l2)
-//    return sum
-//}
-//
-
-var numb = 1234
-var listnumb: [Int] = []
-//for number in numb {
-//    let sequens = number * 1
-//       listnumb.append(number)
-//}
-
-
-       
-var str1 = [Int](["2","1","3"])
-var int1 = 0
-for char in str1{
-    int1 += char
+func sum0000(number: Int) -> Int {
+    var numstr = String(number)
+    var array = [Int]()
+    for char in numstr {
+        if let char = Int(String(char)) {
+            array.append(char)
+        }
+    }
+    let summ = array.reduce(0) {acc, next in
+        return acc + next}
+    return summ
 }
-print(int1)
+
+print(sum0000(number: 1234))
+       
 
