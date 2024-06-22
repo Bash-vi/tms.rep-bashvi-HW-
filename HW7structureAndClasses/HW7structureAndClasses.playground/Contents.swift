@@ -63,11 +63,14 @@ struct AdressSchool {
     }
 }
 
+//там по заданию не написано сделать конструктор для директора, вы же про это говорите?
 class Director: Person {
     var experience: String
-    var rating: String
-    init(experience: String, 
-         rating: String,
+    var rating: Int
+    init(experience: String,
+         rating: Int,
+//    из типов свойств rating под вопросом
+//    но я подумал это будет String мол "high", "medium", "lower"
          name: String,
          surname: String,
          age: Int
@@ -78,6 +81,7 @@ class Director: Person {
     }
 }
 
+let director: Director = .init(experience: "3 years as a mathematics teacher, 5 years as a teacher and 8 years as a deputy director", rating: 99, name: "Jonn", surname: "Jamison", age: 43)
         
 
 
@@ -116,4 +120,9 @@ stud.studinfo()
 //infoadr.schadr()
 
 stud.fulladr()
+
+
+
+
+
 
