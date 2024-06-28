@@ -15,6 +15,7 @@
 		A8FCD89D2C2B34C700137608 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A8FCD89C2C2B34C700137608 /* Base */; };
 		A8FCD8A52C2B350400137608 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCD8A42C2B350400137608 /* RegisterViewController.swift */; };
 		A8FCD8D02C2DE22300137608 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A8FCD8CF2C2DE22300137608 /* SnapKit */; };
+		A8FCD8D22C2EB9C000137608 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCD8D12C2EB9C000137608 /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		A8FCD89C2C2B34C700137608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8FCD89E2C2B34C700137608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8FCD8A42C2B350400137608 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A8FCD8D12C2EB9C000137608 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				A8FCD8922C2B34C600137608 /* SceneDelegate.swift */,
 				A8FCD8942C2B34C600137608 /* ViewController.swift */,
 				A8FCD8A42C2B350400137608 /* RegisterViewController.swift */,
+				A8FCD8D12C2EB9C000137608 /* HomePageViewController.swift */,
 				A8FCD8962C2B34C600137608 /* Main.storyboard */,
 				A8FCD8992C2B34C700137608 /* Assets.xcassets */,
 				A8FCD89B2C2B34C700137608 /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 				A8FCD8952C2B34C600137608 /* ViewController.swift in Sources */,
 				A8FCD8912C2B34C600137608 /* AppDelegate.swift in Sources */,
 				A8FCD8932C2B34C600137608 /* SceneDelegate.swift in Sources */,
+				A8FCD8D22C2EB9C000137608 /* HomePageViewController.swift in Sources */,
 				A8FCD8A52C2B350400137608 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
